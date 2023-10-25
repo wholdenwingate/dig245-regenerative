@@ -1,28 +1,28 @@
 /* javascript */
 
 /* bundesliga */
-    var bundesligaRed = ["Augsburg", "Bayern Munich", "Frankfurt", "Heidenheim", "Koln", "RB Leipzig", "Bayern Leverkusen", "Mainz", "Stuttgart", "Union Berlin"]
-    var bundesligaOrange = ["Union Berlin"]
-    var bundesligaYellow = ["Dortmund", "Bayern Leverkusen", "Stuttgart", "Union Berlin"]
-    var bundesligaGreen = ["Augsburg", "Werder Bremen", "Wolfsburg"]
-    var bundesligaLightBlue = ["Bayern Munich", "Bochum", "Darmstadt", "Hoffenheim"]
-    var bundesligaDarkBlue = ["Heidenheim"]
-    var bundesligaPurple = ["Heidenheim"]
-    var bundesligaBlack = ["Dortmund", "Freiburg", "Koln", "RB Leipzig"]
-    var bundesligaWhite = ["Augsburg", "Bayern Munich", "Bochum", "Werder Bremen", "Darmstadt", "Frankfurt", "Freiburg", "Heidenheim", "Hoffenheim", "Koln", "RB Leipzig", "Leverkusen", "Mainz", "Borussia Monchengladbach", "Stuttgart", "Union Berlin", "Wolfsburg"]
-    var bundesligaBrown = ["Union Berlin"]
+    var bundesligaRed = ["FC Augsburg", "Bayern München", "Eintracht Frankfurt", "1. FC Heidenheim", "FC Köln", "RB Leipzig", "Bayern Leverkusen", "Mainz 05", "VfB Stuttgart", "1. FC Union Berlin"]
+    var bundesligaOrange = ["1. FC Union Berlin"]
+    var bundesligaYellow = ["Borussia Dortmund", "Bayern Leverkusen", "VfB Stuttgart", "1. FC Union Berlin"]
+    var bundesligaGreen = ["FC Augsburg", "Werder Bremen", "Wolfsburg"]
+    var bundesligaLightBlue = ["Bayern München", "VfL Bochum", "FC Darmstadt 01", "1899 Hoffenheim"]
+    var bundesligaDarkBlue = ["1. FC Heidenheim"]
+    var bundesligaPurple = ["1. FC Heidenheim"]
+    var bundesligaBlack = ["Borussia Dortmund", "SC Freiburg", "FC Köln", "RB Leipzig", "Borussia Mönchengladbach"]
+    var bundesligaWhite = ["FC Augsburg", "Bayern München", "VfL Bochum", "Werder Bremen", "SV Darmstadt 01", "Eintracht Frankfurt", "SC Freiburg", "1. FC Heidenheim", "1899 Hoffenheim", "FC Köln", "RB Leipzig", "Bayern Leverkusen", "Mainz 05", "Borussia Mönchengladbach", "VfB Stuttgart", "1. Union Berlin", "Wolfsburg"]
+    var bundesligaBrown = ["1. FC Union Berlin"]
 
 /* Premier League */
-    var premierLeagueRed = ["Arsenal", "Bournmouth", "Brentford", "Crystal Palace", "Nottingham Forest", "Liverpool", "Manchester United", "Sheffield United", "Fulham"]
+    var premierLeagueRed = ["Arsenal", "AFC Bournmouth", "Brentford", "Crystal Palace", "Nottingham Forest", "Liverpool", "Manchester United", "Sheffield United", "Fulham"]
     var premierLeagueOrange = ["Luton Town"]
-    var premierLeagueYellow = ["Arsenal", "Burnley","Manchester United", "West Ham", "Luton Town", "Manchester City", "Aston Villa"]
+    var premierLeagueYellow = ["Arsenal", "Burnley","Manchester United", "West Ham United", "Luton Town", "Manchester City", "Aston Villa"]
     var premierLeagueGreen = ["Liverpool"]
-    var premierLeagueLightBlue = ["Brighton", "Burnley", "Chelsea", "Crystal Palace", "Everton", "Manchester City", "Newcastle", "Aston Villa", "West Ham"]
-    var premierLeagueDarkBlue = ["Luton Town", "Tottenham"]
+    var premierLeagueLightBlue = ["Brighton and Hove Albion", "Burnley", "Chelsea", "Crystal Palace", "Everton", "Manchester City", "Newcastle United", "Aston Villa", "West Ham United"]
+    var premierLeagueDarkBlue = ["Luton Town", "Tottenham Hotspur"]
     var premierLeaguePurple = ["Burnley", "Aston Villa"]
-    var premierLeagueBlack = ["Bournmouth", "Fulham", "Newcastle", "Sheffield United", "Wolves"]
-    var premierLeagueWhite = ["Arsenal", "Bournmouth", "Brentford", "Brighton", "Chelsea", "Crystal Palace", "Everton", "Nottingham Forest", "Fulham", "Liverpool", "Manchester City", "Newcastle", "Sheffield United", "Tottenham"]
-    var premierLeagueBrown = ["West Ham"]
+    var premierLeagueBlack = ["AFC Bournmouth", "Fulham", "Newcastle United", "Sheffield United", "Wolverhampton Wanderers"]
+    var premierLeagueWhite = ["Arsenal", "AFC Bournmouth", "Brentford", "Brighton and Hove Albion", "Chelsea", "Crystal Palace", "Everton", "Nottingham Forest", "Fulham", "Liverpool", "Manchester City", "Newcastle United", "Sheffield United", "Tottenham Hotspur"]
+    var premierLeagueBrown = ["West Ham United"]
 
     document.getElementById("bundesliga-button").addEventListener("click", function() {
         document.getElementById("selected-league").value = "bundesliga";
