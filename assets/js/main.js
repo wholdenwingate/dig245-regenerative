@@ -1,15 +1,15 @@
 /* javascript */
 
 /* bundesliga */
-    var bundesligaRed = ["FC Augsburg", "Bayern München", "Eintracht Frankfurt", "1. FC Heidenheim", "FC Köln", "RB Leipzig", "Bayern Leverkusen", "Mainz 05", "VfB Stuttgart", "1. FC Union Berlin"]
+    var bundesligaRed = ["FC Augsburg", "Bayern München", "Eintracht Frankfurt", "1. FC Heidenheim", "FC Köln", "RB Leipzig", "Bayer Leverkusen", "Mainz 05", "VfB Stuttgart", "1. FC Union Berlin"]
     var bundesligaOrange = ["1. FC Union Berlin"]
-    var bundesligaYellow = ["Borussia Dortmund", "Bayern Leverkusen", "VfB Stuttgart", "1. FC Union Berlin"]
+    var bundesligaYellow = ["Borussia Dortmund", "Bayer Leverkusen", "VfB Stuttgart", "1. FC Union Berlin"]
     var bundesligaGreen = ["FC Augsburg", "Werder Bremen", "Wolfsburg"]
     var bundesligaLightBlue = ["Bayern München", "VfL Bochum", "FC Darmstadt 01", "1899 Hoffenheim"]
     var bundesligaDarkBlue = ["1. FC Heidenheim"]
     var bundesligaPurple = ["1. FC Heidenheim"]
     var bundesligaBlack = ["Borussia Dortmund", "SC Freiburg", "FC Köln", "RB Leipzig", "Borussia Mönchengladbach"]
-    var bundesligaWhite = ["FC Augsburg", "Bayern München", "VfL Bochum", "Werder Bremen", "SV Darmstadt 01", "Eintracht Frankfurt", "SC Freiburg", "1. FC Heidenheim", "1899 Hoffenheim", "FC Köln", "RB Leipzig", "Bayern Leverkusen", "Mainz 05", "Borussia Mönchengladbach", "VfB Stuttgart", "1. Union Berlin", "Wolfsburg"]
+    var bundesligaWhite = ["FC Augsburg", "Bayern München", "VfL Bochum", "Werder Bremen", "SV Darmstadt 01", "Eintracht Frankfurt", "SC Freiburg", "1. FC Heidenheim", "1899 Hoffenheim", "FC Köln", "RB Leipzig", "Bayer Leverkusen", "Mainz 05", "Borussia Mönchengladbach", "VfB Stuttgart", "1. Union Berlin", "Wolfsburg"]
     var bundesligaBrown = ["1. FC Union Berlin"]
 
 /* Premier League */
@@ -118,3 +118,24 @@
             return teamArray[randomIndex];
         } 
     }
+    document.addEventListener("DOMContentLoaded", function() {
+        var buttons = document.querySelectorAll('.image-button');
+        var selectedButton = null;
+
+        buttons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                if (button === selectedButton) {
+                    button.classList.remove('clicked');
+                    selectedButton = null;
+                } else {
+                    if (selectedButton) {
+                        selectedButton.classList.remove('clicked');
+                    }
+                    button.classList.add('clicked')
+                    selectedButton = button;
+                }
+                
+            });
+        });
+    });
+    
