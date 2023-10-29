@@ -120,22 +120,17 @@
     }
     document.addEventListener("DOMContentLoaded", function() {
         var buttons = document.querySelectorAll('.image-button');
-        var selectedButton = null;
 
         buttons.forEach(function(button) {
             button.addEventListener("click", function() {
-                if (button === selectedButton) {
-                    button.classList.remove('clicked');
-                    selectedButton = null;
-                } else {
-                    if (selectedButton) {
-                        selectedButton.classList.remove('clicked');
-                    }
-                    button.classList.add('clicked')
-                    selectedButton = button;
-                }
                 
+                var previouslySelected = document.querySelector('.image-button.clicked');
+                if (previouslySelected) {
+                previouslySelected.classList.remove('clicked');
+
+                };
+
+                button.classList.add('clicked');
             });
         });
     });
-    
