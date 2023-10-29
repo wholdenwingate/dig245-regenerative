@@ -123,7 +123,7 @@
 
         buttons.forEach(function(button) {
             button.addEventListener("click", function() {
-                
+
                 var previouslySelected = document.querySelector('.image-button.clicked');
                 if (previouslySelected) {
                 previouslySelected.classList.remove('clicked');
@@ -134,3 +134,4 @@
             });
         });
     });
+    
