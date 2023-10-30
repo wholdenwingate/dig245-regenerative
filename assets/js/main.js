@@ -2,27 +2,27 @@
 
 /* bundesliga */
     var bundesligaRed = ["FC Augsburg", "Bayern München", "Eintracht Frankfurt", "1. FC Heidenheim", "FC Köln", "RB Leipzig", "Bayer Leverkusen", "Mainz 05", "VfB Stuttgart", "1. FC Union Berlin"]
-    var bundesligaOrange = ["1. FC Union Berlin"]
+    var bundesligaOrange = ["1. FC Union Berlin", "Werder Bremen", "1899 Hoffenheim"]
     var bundesligaYellow = ["Borussia Dortmund", "Bayer Leverkusen", "VfB Stuttgart", "1. FC Union Berlin"]
     var bundesligaGreen = ["FC Augsburg", "Werder Bremen", "Wolfsburg"]
     var bundesligaLightBlue = ["Bayern München", "VfL Bochum", "FC Darmstadt 01", "1899 Hoffenheim"]
-    var bundesligaDarkBlue = ["1. FC Heidenheim"]
-    var bundesligaPurple = ["1. FC Heidenheim"]
+    var bundesligaDarkBlue = ["1. FC Heidenheim", "1899 Hoffenheim", "VfL Bochum"]
+    var bundesligaPurple = ["1. FC Heidenheim", "Borussia Dortmund", "SC Freiburg", "Bayern München"]
     var bundesligaBlack = ["Borussia Dortmund", "SC Freiburg", "FC Köln", "RB Leipzig", "Borussia Mönchengladbach"]
     var bundesligaWhite = ["FC Augsburg", "Bayern München", "VfL Bochum", "Werder Bremen", "SV Darmstadt 01", "Eintracht Frankfurt", "SC Freiburg", "1. FC Heidenheim", "1899 Hoffenheim", "FC Köln", "RB Leipzig", "Bayer Leverkusen", "Mainz 05", "Borussia Mönchengladbach", "VfB Stuttgart", "1. Union Berlin", "Wolfsburg"]
-    var bundesligaBrown = ["1. FC Union Berlin"]
+    var bundesligaBrown = ["1. FC Union Berlin", "FC Köln", "Borussia Dortmund"]
 
 /* Premier League */
     var premierLeagueRed = ["Arsenal", "AFC Bournmouth", "Brentford", "Crystal Palace", "Nottingham Forest", "Liverpool", "Manchester United", "Sheffield United", "Fulham"]
-    var premierLeagueOrange = ["Luton Town"]
+    var premierLeagueOrange = ["Luton Town", "Wolverhampton Wanderers", "Liverpool"]
     var premierLeagueYellow = ["Arsenal", "Burnley","Manchester United", "West Ham United", "Luton Town", "Manchester City", "Aston Villa"]
-    var premierLeagueGreen = ["Liverpool"]
-    var premierLeagueLightBlue = ["Brighton and Hove Albion", "Burnley", "Chelsea", "Crystal Palace", "Everton", "Manchester City", "Newcastle United", "Aston Villa", "West Ham United"]
-    var premierLeagueDarkBlue = ["Luton Town", "Tottenham Hotspur"]
-    var premierLeaguePurple = ["Burnley", "Aston Villa"]
+    var premierLeagueGreen = ["Liverpool", "Manchester United", "Wolverhampton Wanderers", "Tottenham Hotspur", "Brentford"]
+    var premierLeagueLightBlue = ["Brighton and Hove Albion", "Burnley", "Chelsea FC", "Crystal Palace", "Everton", "Manchester City", "Newcastle United", "Aston Villa", "West Ham United"]
+    var premierLeagueDarkBlue = ["Luton Town", "Tottenham Hotspur", "Chelsea FC", "Everton FC", "Arsenal"]
+    var premierLeaguePurple = ["Burnley", "Aston Villa", "Newcastle United"]
     var premierLeagueBlack = ["AFC Bournmouth", "Fulham", "Newcastle United", "Sheffield United", "Wolverhampton Wanderers"]
-    var premierLeagueWhite = ["Arsenal", "AFC Bournmouth", "Brentford", "Brighton and Hove Albion", "Chelsea", "Crystal Palace", "Everton", "Nottingham Forest", "Fulham", "Liverpool", "Manchester City", "Newcastle United", "Sheffield United", "Tottenham Hotspur"]
-    var premierLeagueBrown = ["West Ham United"]
+    var premierLeagueWhite = ["Arsenal", "AFC Bournmouth", "Brentford", "Brighton and Hove Albion", "Chelsea FC", "Crystal Palace", "Everton", "Nottingham Forest", "Fulham", "Liverpool", "Manchester City", "Newcastle United", "Sheffield United", "Tottenham Hotspur"]
+    var premierLeagueBrown = ["West Ham United", "Chelsea FC", "Wolverhampton Wanderers"]
 
     document.getElementById("bundesliga-button").addEventListener("click", function() {
         document.getElementById("selected-league").value = "bundesliga";
@@ -134,4 +134,4 @@
             });
         });
     });
-    
+
