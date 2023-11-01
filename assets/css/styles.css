@@ -2,13 +2,19 @@
 /* css */
 
 #topbar {
-    background-color: dimgray;
+    background-color: rgb(125, 123, 123);
     border-radius: 25px;
     font-family: 'Oswald', sans-serif;
+}
+#title {
+    color: rgb(45, 42, 42);
 }
 #background {
     background-color: lightgrey;
     
+}
+label {
+    display: block;
 }
 #link1, #link2, #link3 {
     padding-right: 20px;
