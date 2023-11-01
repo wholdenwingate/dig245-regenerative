@@ -4,10 +4,11 @@
 #topbar {
     background-color: dimgray;
     border-radius: 25px;
+    font-family: 'Oswald', sans-serif;
 }
 #background {
     background-color: lightgrey;
-    font-family: 'Oswald', sans-serif;
+    
 }
 #link1, #link2, #link3 {
     padding-right: 20px;
