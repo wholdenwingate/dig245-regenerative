@@ -39,8 +39,27 @@
         var selectedColor = document.querySelector('input[name="favcolor"]:checked').value;
 
         var selectedTeam = getRandomSelectedTeam(selectedLeague, selectedColor);
+        var selectedTeamLink = document.getElementById("selected-team-link");
+        selectedTeamLink.textContent = '';
+        if (selectedTeam) {
+            var link = "";
 
-        document.getElementById("selected-team").innerHTML = "<h3>Selected Team: " + selectedTeam + "</h3>";
+            if (selectedLeague === "bundesliga") {
+                link = `bundesliga.html#${selectedTeam.toLowerCase()}`;
+            } else if (selectedLeague === "premier-league") {
+                link = `prem.html#${selectedTeam.toLowerCase()}`;
+            }
+            
+            var teamLinkElement = document.createElement("a");
+            teamLinkElement.href = link;
+            teamLinkElement.textContent = selectedTeam;
+
+            selectedTeamLink.appendChild(teamLinkElement);
+            
+            selectedTeamLink.innerHTML = `Selected Team: <a href="${link}">${selectedTeam}</a>`;
+        } else {
+            selectedTeamLink.textContent = "No teams found for the selected criteria.";
+        }
     });
 
     function getRandomSelectedTeam(league, color) {
